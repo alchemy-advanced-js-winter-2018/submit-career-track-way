@@ -11,17 +11,9 @@ Submit an assignment the Career Track way!
 1. Essentials
     * `.eslintrc` 
     * `.gitignore`
-    
-    ```
-    node_modules
-    DS_Store
-    .vs_code
-    .env
-    ```
-    
     * `package.json`
     
-    ```
+    ```sh
     > npm init
     ```
     
