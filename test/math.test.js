@@ -27,7 +27,7 @@ describe('math function', () => {
             called = true;
         }
         catch (err){
-            assert.equal(err.message, 'tried to divide by 0');
+            assert.equal(err.message, 'attempted to divide by 0');
         }
         assert.equal(called, false);
     });
@@ -46,8 +46,7 @@ function multiply(x, y){
 }
 
 function divide(x, y){
-    if(y === 0) throw new Error('error for /0');
-    
+    if(y === 0) throw new Error('attempted to divide by 0');
     return x / y;
 }
 
