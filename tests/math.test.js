@@ -17,7 +17,18 @@ describe('math function', () => {
     });
 
     it('divide', () => {
-        assert.equal(divide(6, 3), 2)
+        assert.equal(divide(6, 3), 2);
+    });
+
+    it('error for /0', () => {
+        let called = false;
+        try {
+            divide(12, 0);
+            called = true;
+        }
+        catch (err){
+            assert.equal(err.message, 'tried to divide by 0');
+        }
     });
 });
 
@@ -34,6 +45,8 @@ function multiply(x, y){
 }
 
 function divide(x, y){
+    if(y === 0) throw new error('error for /0');
+    
     return x / y;
 }
 
