@@ -23,6 +23,18 @@ describe('math functions', () => {
     });
 
     it('throws an error dividing by zero', () => {
+        let succeeded = false;
+        try {
+            divide(12, 0);
+            // if we get here, it did NOT thrown error;
+            succeeded = true;
+        }
+        catch(err) {
+            // if we end up here, things are good!
+            assert.equal(err.message, 'Attempt to divide by zero');
+        }
+
+        assert.equal(succeeded, false, 'expected error to be thrown, but call to divide with zero succeeded');
 
     });
 });
