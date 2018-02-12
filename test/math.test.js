@@ -22,7 +22,17 @@ describe('math functions', () => {
     });
 
     it('throws an error if dividing by zero', () => {
+        let succeeded = false;
 
+        try {
+            divide(12, 0);
+            succeeded = true;
+        }
+        catch (err){
+            // if we end up here, things are going as expected
+            assert.equal(err.message, 'Attempt to divide by zero')
+        }
+        assert.equal(succeeded, false);
     });
 
 });
