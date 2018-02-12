@@ -1,0 +1,22 @@
+{
+  "name": "submit-career-track-way",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heicj/submit-career-track-way.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heicj/submit-career-track-way/issues"
+  },
+  "homepage": "https://github.com/heicj/submit-career-track-way#readme"
+}
+
+
