@@ -30,7 +30,7 @@ describe('math functions', () => {
         }
         catch (err){
             // if we end up here, things are going as expected
-            assert.equal(err.message, 'Attempt to divide by zero')
+            assert.equal(err.message, 'Attempt to divide by zero');
         }
         assert.equal(succeeded, false);
     });
