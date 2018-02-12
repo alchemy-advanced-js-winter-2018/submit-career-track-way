@@ -29,6 +29,7 @@ describe('math function', () => {
         catch (err){
             assert.equal(err.message, 'tried to divide by 0');
         }
+        assert.equal(called, false);
     });
 });
 
@@ -45,7 +46,7 @@ function multiply(x, y){
 }
 
 function divide(x, y){
-    if(y === 0) throw new error('error for /0');
+    if(y === 0) throw new Error('error for /0');
     
     return x / y;
 }
