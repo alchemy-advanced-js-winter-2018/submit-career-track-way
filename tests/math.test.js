@@ -1,0 +1,40 @@
+const assert = require('assert');
+
+// const add = require('../lib/add')
+
+describe('math function', () => {
+
+    it('add', () => {
+        assert.equal(add(1, 2), 3);
+    });
+
+    it('subtract', () => {
+        assert.equal(subtract(2, 1), 1);
+    });
+
+    it('multiply', () => {
+        assert.equal(multiply(2, 2), 4);
+    });
+
+    it('divide', () => {
+        assert.equal(divide(6, 3), 2)
+    });
+});
+
+function add(x, y){
+    return x + y;
+}
+
+function subtract(x, y){
+    return x - y;
+}
+
+function multiply(x, y){
+    return x * y;
+}
+
+function divide(x, y){
+    return x / y;
+}
+
+module.exports = add, subtract, multiply, divide;
