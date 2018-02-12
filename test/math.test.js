@@ -20,5 +20,18 @@ describe('math functions', () => {
     it('divide', () => {
         assert.equal(divide(10, 2), 5);
     });
+
+    it('throws and error dividing by zero', () => {
+        let called = false;
+        try {
+            divide(12, 0);
+            called = true;
+        }
+        catch (err){
+            //if we end up here, things are good
+            assert.equal(err.message, 'Attempted to divide by zero');
+        }
+        assert.equal(called, false);
+    });
 });
 
